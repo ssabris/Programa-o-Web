@@ -2,6 +2,9 @@
 
 Atividade prática utilizando tags de formulário do HTML5 e seus recursos nativos de validação, com base em um modelo de página de contato.
 
+<img width="927" height="917" alt="image" src="https://github.com/user-attachments/assets/05a93947-7995-4d0a-9d1b-03c959988af2" />
+
+
 ## 📄 Sobre a atividade
 
 O objetivo é reproduzir uma página de contato utilizando as tags de formulário do HTML5, aplicando validações nativas do navegador (sem uso de JavaScript) para os seguintes campos:
@@ -44,4 +47,4 @@ O objetivo é reproduzir uma página de contato utilizando as tags de formulári
 
 ## ✍️ Autoria
 
-Atividade desenvolvida por Sabrina — curso de Análise e Desenvolvimento de Sistemas (FATEC Ipiranga).
+Atividade desenvolvida por Sabrina Bernardi
