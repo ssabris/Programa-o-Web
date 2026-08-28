@@ -1,0 +1,52 @@
+/* =========================================================
+   SELETOR POR ID
+   ========================================================= */
+#busca {
+  width: 220px;
+  max-width: 60vw;
+}
+
+/* =========================================================
+   SELETOR POR TAG
+   ========================================================= */
+input {
+  background-color: #ffffff;
+}
+
+button {
+  padding: 8px 18px;
+}
+
+/* =========================================================
+   SELETOR POR CLASSE (apelido)
+   ========================================================= */
+.busca-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.busca-btn {
+  background-color: var(--cor-escura);
+  color: #ffffff;
+}
+
+.busca-btn:hover {
+  background-color: var(--cor-primaria-escura);
+}
+
+/* =========================================================
+   MEDIA QUERY
+   ========================================================= */
+@media (max-width: 480px) {
+  .busca-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  #busca {
+    width: 100%;
+    max-width: 100%;
+  }
+}
