@@ -1,0 +1,34 @@
+<h2>Cesta de compras</h2>
+
+<div class="alert alert-warning" *ngIf="itens.length<=0"><strong>Vazio!</strong>
+    sua cesta não tem produtos!</div>
+
+<div *ngIf="itens.length>0">
+
+    <div class="row bg-dark text-white p-2 d-none d-md-flex">
+        <div class="col-md-2">Foto</div>
+        <div class="col-md-4">Produto</div>
+        <div class="col-md-2">Quantidade</div>
+        <div class="col-md-2">Valor</div>
+        <div class="col-md-2">Subtotal</div>
+    </div>
+
+    <div class="row border-bottom p-2" *ngFor="let obj of itens">
+        <div class="col-12 col-md-2">
+            <img src="{{obj.codigo}}.jpg" style="width:80px">
+        </div>
+        <div class="col-12 col-md-4">{{obj.nome}}</div>
+        <div class="col-4 col-md-2">{{obj.quantidade}}</div>
+        <div class="col-4 col-md-2">R$ {{obj.valor}}</div>
+        <div class="col-4 col-md-2">R$ {{obj.quantidade * obj.valor}}</div>
+    </div>
+
+    <div class="row p-2">
+        <div class="col-12 text-end">
+            <h4>Total: R$ {{total}}</h4>
+            <a href="vitrine" class="btn btn-primary">continuar comprando</a>
+            <a href="pedido" class="btn btn-success">fechar pedido</a>
+        </div>
+    </div>
+
+</div>
